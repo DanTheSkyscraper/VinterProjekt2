@@ -4,7 +4,7 @@
 
     //------------------------------------------------------
 
-    public static string DifficultyChoice() //FIND OUT HOW TO APPLY TO ARV | CURRENT CONTEXT
+    public static string DifficultyChoice() //FIND OUT HOW TO APPLY THIS TO ARV FOR WEAPON AND HP (Increase)
     {
         string difficultyChoice = "";
         
@@ -17,5 +17,7 @@
                 Console.WriteLine("\n\nPlease write only 'easy', 'medium' or 'hard'. Your choice should only be written in lowercase");
             }
         }
+
+        
     }
 }

@@ -3,8 +3,11 @@
 string restartGame = "y";
 while(restartGame == "y")
 {
+    //Entities enemy = new Entities();
 
+    //Difficulty d = new Difficulty();
 
+    //enemy.health = d.ModifyEnemyHealth(enemy.health);
 
 
 

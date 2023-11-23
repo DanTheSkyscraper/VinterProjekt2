@@ -1,4 +1,4 @@
-﻿public class Sword : Weapons
+﻿public class Sword : Weapon
 {
     private Random Generator = new Random();
 
@@ -10,9 +10,9 @@
         weaponDamage = Generator.Next(5, 10);
     }
 
-    public override int weaponAttack()
+    public override int WeaponCriticalAttack()
     {
         Console.WriteLine("\n\nThe player chooses to do a charge attack!");
-        return Generator.Next(3, 6) + Random.Shared.Next(weaponDamage);
+        return Generator.Next(1, 2) + Random.Shared.Next(weaponDamage);
     }
 }
