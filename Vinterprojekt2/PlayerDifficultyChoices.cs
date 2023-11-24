@@ -1,4 +1,4 @@
-﻿public class PlayerChoices
+﻿public class PlayerDifficultyChoices
 {
     private Random Generator = new Random();
 

@@ -7,7 +7,7 @@
     public Mace()
     {
         weaponName = "Mace";
-        weaponDamage = Generator.Next(1, 16);
+        weaponDamage = Generator.Next(4, 16);
     }
 
     public override int WeaponCriticalAttack()

@@ -6,14 +6,14 @@
 
     public Axe()
     {
-        weaponName = "Axe";
-        weaponDamage = Generator.Next(3, 8);
+      weaponName = "Axe";
+      weaponDamage = Generator.Next(3, 8);
     }
 
     public override int WeaponCriticalAttack()
     {
-        Console.WriteLine("\n\nThe player chooses to do a charge attack!");
-        return Generator.Next(6, 8) + Random.Shared.Next(weaponDamage);
+      Console.WriteLine("\n\nThe player chooses to do a charge attack!");
+      return Generator.Next(6, 8) + Random.Shared.Next(weaponDamage);
     }
 }
 

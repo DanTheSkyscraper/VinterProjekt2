@@ -7,7 +7,7 @@
     public Sword()
     {
         weaponName = "Sword";
-        weaponDamage = Generator.Next(5, 10);
+        weaponDamage = Generator.Next(3, 6);
     }
 
     public override int WeaponCriticalAttack()

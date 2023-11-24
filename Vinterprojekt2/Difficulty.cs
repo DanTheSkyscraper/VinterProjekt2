@@ -1,7 +1,14 @@
-﻿public class Difficulty
+﻿public class Difficulty : PlayerDifficultyChoices
 {
-    public virtual int ModifyEnemyHealth(int oldValue)
+    private Random Generator = new Random();
+
+    public virtual int ModifyEnemyHealth(int oldHealthValue)
     {
-        return oldValue -= 10;
+        return oldHealthValue = 100;
+    }
+
+    public virtual int DamageModifier(int oldEnemyDamageAmount)
+    {
+        return oldEnemyDamageAmount = Generator.Next(4, 8);
     }
 }

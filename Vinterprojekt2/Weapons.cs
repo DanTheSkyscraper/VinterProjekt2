@@ -4,7 +4,7 @@
 
     public int weaponDamage;
 
-    public virtual int weaponAttackChoice()
+    public virtual int Attack()
     {
         return Random.Shared.Next(weaponDamage);
     }

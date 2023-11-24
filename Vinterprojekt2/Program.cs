@@ -10,8 +10,6 @@ while(restartGame == "y")
     //enemy.health = d.ModifyEnemyHealth(enemy.health);
 
 
-
-
     Console.WriteLine("\n\nDo you want to play again?");
     restartGame = Console.ReadLine();
 }
