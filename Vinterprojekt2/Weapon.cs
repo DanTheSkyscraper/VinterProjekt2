@@ -1,4 +1,4 @@
-﻿public class Weapon
+﻿public class Weapon : Entity
 {
     public string weaponName;
 
@@ -13,6 +13,5 @@
     {
         return Random.Shared.Next(weaponDamage);
     }
-
 
 }

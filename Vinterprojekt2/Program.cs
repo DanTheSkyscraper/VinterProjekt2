@@ -1,5 +1,9 @@
 ﻿//The start of the game is here.
 
+//GameManager gm = new();
+
+//gm.PrintStats();
+
 string restartGame = "y";
 while(restartGame == "y")
 {

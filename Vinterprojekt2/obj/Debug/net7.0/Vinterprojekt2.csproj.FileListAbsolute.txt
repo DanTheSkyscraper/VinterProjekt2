@@ -1,0 +1,14 @@
+c:\Users\daniel.taherkhanian\Documents\VinterProjekt2\Vinterprojekt2\obj\Debug\net7.0\Vinterprojekt2.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\daniel.taherkhanian\Documents\VinterProjekt2\Vinterprojekt2\obj\Debug\net7.0\Vinterprojekt2.AssemblyInfoInputs.cache
+c:\Users\daniel.taherkhanian\Documents\VinterProjekt2\Vinterprojekt2\obj\Debug\net7.0\Vinterprojekt2.AssemblyInfo.cs
+c:\Users\daniel.taherkhanian\Documents\VinterProjekt2\Vinterprojekt2\obj\Debug\net7.0\Vinterprojekt2.csproj.CoreCompileInputs.cache
+c:\Users\daniel.taherkhanian\Documents\VinterProjekt2\Vinterprojekt2\bin\Debug\net7.0\Vinterprojekt2.exe
+c:\Users\daniel.taherkhanian\Documents\VinterProjekt2\Vinterprojekt2\bin\Debug\net7.0\Vinterprojekt2.deps.json
+c:\Users\daniel.taherkhanian\Documents\VinterProjekt2\Vinterprojekt2\bin\Debug\net7.0\Vinterprojekt2.runtimeconfig.json
+c:\Users\daniel.taherkhanian\Documents\VinterProjekt2\Vinterprojekt2\bin\Debug\net7.0\Vinterprojekt2.dll
+c:\Users\daniel.taherkhanian\Documents\VinterProjekt2\Vinterprojekt2\bin\Debug\net7.0\Vinterprojekt2.pdb
+c:\Users\daniel.taherkhanian\Documents\VinterProjekt2\Vinterprojekt2\obj\Debug\net7.0\Vinterprojekt2.dll
+c:\Users\daniel.taherkhanian\Documents\VinterProjekt2\Vinterprojekt2\obj\Debug\net7.0\refint\Vinterprojekt2.dll
+c:\Users\daniel.taherkhanian\Documents\VinterProjekt2\Vinterprojekt2\obj\Debug\net7.0\Vinterprojekt2.pdb
+c:\Users\daniel.taherkhanian\Documents\VinterProjekt2\Vinterprojekt2\obj\Debug\net7.0\Vinterprojekt2.genruntimeconfig.cache
+c:\Users\daniel.taherkhanian\Documents\VinterProjekt2\Vinterprojekt2\obj\Debug\net7.0\ref\Vinterprojekt2.dll
