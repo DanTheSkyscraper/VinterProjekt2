@@ -9,7 +9,7 @@
 
     public override void SetName()
     {
-        Console.WriteLine("\n\nthe name of your enemy is:");
+        Console.WriteLine("\n\nThe name of your enemy is:");
         int i = Random.Shared.Next(names.Count);
 
         name = Console.ReadLine();

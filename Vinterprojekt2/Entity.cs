@@ -15,8 +15,7 @@
     public Mace mace;
 
     public Weapon weapon;
-
-    private Random Generator = new Random();
+    
     //-------------------------------------
 
     public Entity()
@@ -27,16 +26,6 @@
     public virtual void SetName()
     {
 
-    }
-
-    public static string PlayerName()
-    {
-        string PlayerName;
-
-        Console.WriteLine("\n\nWrite the name of your character:");
-        PlayerName = Console.ReadLine();
-
-        return PlayerName;
     }
 
     public void Attack(Entity target)
