@@ -14,6 +14,27 @@
             }
         }
 
+        if(weaponChoice == "sword")
+        {
+            Console.WriteLine("\n\nYou chose the Sword");
+            //weaponChoice = 
+        }
+        else if(weaponChoice == "axe")
+        {
+            Console.WriteLine("\n\nYou chose the Axe");
+            //weaponChoice =
+        }
+        else if(weaponChoice == "spear")
+        {
+            Console.WriteLine("\n\nYou chose the Spear");
+            //weaponChoice =
+        }
+        else
+        {
+            Console.WriteLine("\n\nYou chose the Mace");
+            //weaponChoice =
+        }
+
 
         return weaponChoice;
     }

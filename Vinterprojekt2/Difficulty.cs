@@ -1,13 +1,13 @@
-﻿public class Difficulty : PlayerDifficultyChoices
+﻿public class Difficulty
 {
     private Random Generator = new Random();
 
-    public virtual int ModifyEnemyHealth(int oldHealthValue)
+    public virtual int ModifyEnemyHealth(int oldHealthValue) //Kan jag ändra till vanling hälsa 'public int health' i Entity?
     {
         return oldHealthValue = 100;
     }
 
-    public virtual int DamageModifier(int oldEnemyDamageAmount)
+    public virtual int DamageModifier(int oldEnemyDamageAmount) //Kan jag ändra till vanling damage?
     {
         return oldEnemyDamageAmount = Generator.Next(4, 8);
     }

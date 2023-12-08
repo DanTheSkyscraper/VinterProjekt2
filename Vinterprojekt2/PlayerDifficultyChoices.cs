@@ -3,7 +3,7 @@
 
     //------------------------------------------------------
 
-    public static string DifficultyChoice() //FIND OUT HOW TO APPLY THIS TO ARV FOR WEAPON AND HP (Increase)
+    public static string DifficultyChoice()
     {
         string difficultyChoice = "";
         

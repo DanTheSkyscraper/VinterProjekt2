@@ -1,7 +1,9 @@
-﻿public class GameManager
+﻿public class GameManager : Entity
 {
     private PlayerEntity player = new();
     private EnemyEntity enemy = new();
+
+    //-------------------------------------
 
     public GameManager()
     {
@@ -12,20 +14,26 @@
     {
         if(player.GetAlive() == true)
         {
-            Console.WriteLine($"\nPlayer '{player.name}' status: 'Alive'");
+            Console.WriteLine($"\n\nPlayer '{player.name}' status: 'Alive'");
         }
         else
         {
-            Console.WriteLine($"\nPlayer '{player.name}' status: 'Dead'");
+            Console.WriteLine($"\n\nPlayer '{player.name}' status: 'Dead'");
         }
+        Console.WriteLine($"\nPlayer '{player.name}' Health: {health}");
+        Console.WriteLine($"Player '{player.name}' Weapon: {weapon.weaponName}");
 
         if(enemy.GetAlive() == true)
         {
-            Console.WriteLine($"\nEnemy '{enemy.name}' status: 'Alive'");
+            Console.WriteLine($"\n\nEnemy '{enemy.name}' status: 'Alive'");
         }
         else
         {
-            Console.WriteLine($"\nEnemy '{enemy.name}' status: 'Dead'");
+            Console.WriteLine($"\n\nEnemy '{enemy.name}' status: 'Dead'");
         }
+        Console.WriteLine($"\nPlayer '{enemy.name}' Health: {health}");
+        Console.WriteLine($"Player '{enemy.name}' Weapon: {weapon.weaponName}");
     }
+
+    
 }

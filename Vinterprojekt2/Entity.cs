@@ -20,7 +20,7 @@
 
     public Entity()
     {
-        Weapon weapon = new();
+        Weapon weapon = new(); //Unused?
     }
 
     public virtual void SetName()

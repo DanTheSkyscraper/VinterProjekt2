@@ -6,7 +6,6 @@ while(restartGame == "y")
 
     PlayerEntity player = new();
     EnemyEntity enemy = new();
-    Weapon weapon = new();
     GameManager gm = new();
 
     Console.WriteLine("What is your name?");
@@ -18,8 +17,8 @@ while(restartGame == "y")
     Console.WriteLine("\n\nAs per tradition, you will both select your weapons.");
     Console.WriteLine("\n\nYou have four choices. Sword [a] / Axe [b] / Spear [c] / Mace [d]. Please answer in lowercase.");
 
-    
-    
+    string weaponChoice = PlayerWeaponChoice.WeaponChoice(); //How should I use the weaponChoice? It is unused.
+    //Player and enemy chooses weapons here. Add the code.
 
     
     Console.WriteLine("\n\nIt seems you are both done. Which difficulty are you on?");
@@ -29,28 +28,64 @@ while(restartGame == "y")
     if(difficultyChoice == "easy")
     {
         Console.WriteLine("\n\nEasy difficulty huh? Alright then. Let the final match begin!");
+        while(player.health > 0 && enemy.health > 0)
+        {
+            Console.WriteLine("\n\n--------------------------");
+            Console.WriteLine("They are attacking each other again!");
+            gm.PrintStats();
 
-        gm.PrintStats();
 
+            player.Attack(enemy);
+            enemy.Attack(player);
 
+            player.HealthStatusCheck();
+            enemy.HealthStatusCheck();
+
+        }
     }
     else if(difficultyChoice == "medium")
     {
         Console.WriteLine("\n\nMedium difficulty huh? Alright then. Let the final match begin!");
+        while(player.health > 0 && enemy.health > 0)
+        {
+            Console.WriteLine("\n\n--------------------------");
+            Console.WriteLine("They are attacking each other again!");
+            gm.PrintStats();
 
-        gm.PrintStats();
+
+            player.Attack(enemy);
+            enemy.Attack(player);
+
+            player.HealthStatusCheck();
+            enemy.HealthStatusCheck();
+
+        }
     }
     else
     {
         Console.WriteLine("\n\nHard difficulty huh? Alright then. Let the final match begin!");
+        while(player.health > 0 && enemy.health > 0)
+        {
+            Console.WriteLine("\n\n--------------------------");
+            Console.WriteLine("They are attacking each other again!");
+            gm.PrintStats();
 
-        gm.PrintStats();
+
+            player.Attack(enemy);
+            enemy.Attack(player);
+
+            player.HealthStatusCheck();
+            enemy.HealthStatusCheck();
+
+        }
     }
-
     Console.WriteLine("\n\n----------------------------");
     Console.WriteLine("\n\nThe fight is now concluded! Let us see who is the victor...");
 
-    
+    if(player.GetAlive() == true && enemy.GetAlive() == false)
+    {
+
+    }
 
 
 
