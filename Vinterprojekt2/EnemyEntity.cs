@@ -6,10 +6,11 @@
 
     //-------------------------------------------
 
+    
 
     public override void SetName()
     {
-        Console.WriteLine("\n\nThe name of your enemy is:");
+        Console.WriteLine("\n\nA good name! Now, this is who you will be facing:");
         int i = Random.Shared.Next(names.Count);
 
         name = Console.ReadLine();

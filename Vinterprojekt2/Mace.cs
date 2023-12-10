@@ -1,6 +1,6 @@
 ﻿public class Mace : Weapon
 {
-    private Random Generator = new Random();
+    private Random Generator = new Random(); //This Random Generator makes it so that the parts of the code below that use it are randomized. For this part, Random Generator randomizes the damage and Critical Damage dealt with this specific weapon.
 
     //------------------------------
 
