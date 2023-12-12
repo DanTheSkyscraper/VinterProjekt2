@@ -2,6 +2,11 @@
 {
     private Random Generator = new Random();
 
+    public EasyDifficulty()
+    {
+        difficultyName = "Easy";
+    }
+
     public override int ModifyEnemyHealth(int oldHealthValue)
     {
         return oldHealthValue = 100 - 10;

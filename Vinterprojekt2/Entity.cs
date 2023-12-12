@@ -1,4 +1,6 @@
-﻿public class Entity
+﻿using System.Runtime;
+
+public class Entity
 {
     public string name;
 
@@ -10,7 +12,7 @@
     
     //-------------------------------------
 
-    public Entity()
+    public Entity() //Likadant för enemyentity vapen
     {
         Weapon weapon = new();
     }
@@ -33,9 +35,18 @@
         }
         target.health -= weaponDamage;
         target.health = Math.Max(0, target.health); //'Math.Max' is a Math class method used to return the larger of two specified numbers. In this code, that would be target.health, which means either the players or the enemies health.
-        Console.WriteLine($"\n\n{name} dealth {weaponDamage} damage!");
-    } 
+        Console.WriteLine($"\n\n{name} dealt {weaponDamage} damage!");
+    }
+
+    public void WeaponCriticalAttack(Entity enemy)
+    {
+        Console.WriteLine($"\n\n{name} attacks with {weapon.weaponName}");
+        int weaponDamage = weapon.WeaponCriticalAttack();
+        enemy.health -= weaponDamage;
+        enemy.health = Math.Max(0, enemy.health);
+        Console.WriteLine($"\n\n{name} dealt {weaponDamage} damage!");
+    }
 }
 
-//Line 33: Ska det läggas till på line 34 if(ModifyEnemyHealth)?
+//Line 33: Ska det läggas till på line 34 if(ModifyEnemyHealth)? Eller?
 

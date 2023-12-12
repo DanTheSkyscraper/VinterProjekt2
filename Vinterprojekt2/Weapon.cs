@@ -17,3 +17,10 @@
     }
 
 }
+
+
+// public Weapon()
+// {
+//     int i = Generator.Next(weapons.Count);
+//     weaponName = weapons[i];
+// }
