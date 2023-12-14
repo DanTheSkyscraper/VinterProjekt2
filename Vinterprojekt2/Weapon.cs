@@ -1,4 +1,4 @@
-﻿public class Weapon : Entity
+﻿public class Weapon
 {
     public string weaponName;
 
@@ -17,10 +17,3 @@
     }
 
 }
-
-
-// public Weapon()
-// {
-//     int i = Generator.Next(weapons.Count);
-//     weaponName = weapons[i];
-// }

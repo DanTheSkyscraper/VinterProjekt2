@@ -16,29 +16,3 @@
       return Generator.Next(6, 8) + Random.Shared.Next(weaponDamage);
     }
 }
-
-
-
-/*
-Difficulty
-  virtual int DamageModifier(int amount)
-
-EasyDifficulty: Difficulty
-  overridar DamageModifier
-
-HardDifficulty: difficulty
-  overridar DamageModifier
-
-
-
-
-GameManager
-  Difficulty diff 
-  
-  if (valt easy)
-    diff = new EasyDifficulty()
-
-
-
-  enemy.health -= diff.DamageModifier(player.weapon.GetDamage())
-*/

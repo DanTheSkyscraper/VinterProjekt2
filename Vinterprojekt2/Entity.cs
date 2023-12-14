@@ -1,6 +1,4 @@
-﻿using System.Runtime;
-
-public class Entity
+﻿public class Entity
 {
     public string name;
 
@@ -12,7 +10,7 @@ public class Entity
     
     //-------------------------------------
 
-    public Entity() //Likadant för enemyentity vapen
+    public Entity() //Det här är en konstruktor.
     {
         Weapon weapon = new();
     }
@@ -47,6 +45,4 @@ public class Entity
         Console.WriteLine($"\n\n{name} dealt {weaponDamage} damage!");
     }
 }
-
-//Line 33: Ska det läggas till på line 34 if(ModifyEnemyHealth)? Eller?
 

@@ -2,7 +2,7 @@
 {
     private Random Generator = new Random(); //Ta bort om behövs. Gäller alla andra generators också.
 
-    private bool IsAlive = true;
+    private bool isAlive = true;
 
     //--------------------------------------------
 
@@ -14,14 +14,14 @@
 
     public bool GetAlive()
     {
-        return IsAlive;
+        return isAlive;
     }
 
     public void HealthStatusCheck()
     {
         if(health <= 0)
         {
-            IsAlive = false;
+            isAlive = false;
         }
     }
 

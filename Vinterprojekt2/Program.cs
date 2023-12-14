@@ -18,7 +18,8 @@ while (restartGame == "y")
 
     //Player and enemy chooses weapons here. Add the code.
     player.weapon = PlayerWeaponChoice.WeaponChoice();
-    enemy.
+    //enemy.
+    enemy.RandomEnemyWeapon();
 
 
     Console.WriteLine("\n\nIt seems you are both done. Which difficulty are you on?");

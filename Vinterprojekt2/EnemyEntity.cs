@@ -1,34 +1,31 @@
-﻿public class EnemyEntity : Entity
+﻿public class EnemyEntity : Entity //EnemyEntity är en sorts entity
 {
     private Random Generator = new Random();
 
-    private bool IsAlive = true;
+    private bool isAlive = true;
 
     //-------------------------------------------
 
-    public Weapon RandomEnemyWeapon()
+    public void RandomEnemyWeapon()
     {
         int eWeapon = Random.Shared.Next(5);
-        Weapon enemyWeapon;
 
         if(eWeapon == 1)
         {
-            enemyWeapon = new Sword();
+            weapon = new Sword();
         }
         else if(eWeapon == 2)
         {
-            enemyWeapon = new Axe();
+            weapon = new Axe();
         }
         else if(eWeapon == 3)
         {
-            enemyWeapon = new Spear();
+            weapon = new Spear();
         }
         else
         {
-            enemyWeapon = new Mace();
+            weapon = new Mace();
         }
-
-        return enemyWeapon;
     }
 
     public override void SetName()
@@ -41,14 +38,14 @@
 
     public bool GetAlive()
     {
-        return IsAlive;
+        return isAlive;
     }
 
     public void HealthStatusCheck()
     {
         if(health <= 0)
         {
-            IsAlive = false;
+            isAlive = false;
         }
     }
 }

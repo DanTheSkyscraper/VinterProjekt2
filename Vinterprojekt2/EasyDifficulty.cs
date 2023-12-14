@@ -1,4 +1,4 @@
-﻿public class EasyDifficulty : Difficulty
+﻿public class EasyDifficulty : Difficulty //EasyDifficulty är en sorts difficulty
 {
     private Random Generator = new Random();
 

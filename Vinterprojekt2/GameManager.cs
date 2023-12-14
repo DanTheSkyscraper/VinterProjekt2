@@ -1,4 +1,4 @@
-﻿public class GameManager : Entity // Is this correct? See line 23, 24 and 34, 35.
+﻿public class GameManager // Is this correct? See line 23, 24 and 34, 35.
 {
     private PlayerEntity player = new();
     private EnemyEntity enemy = new();
@@ -20,8 +20,8 @@
         {
             Console.WriteLine($"\n\nPlayer '{player.name}' status: 'Dead'");
         }
-        Console.WriteLine($"\nPlayer '{player.name}' Health: {health}");
-        Console.WriteLine($"Player '{player.name}' Weapon: {weapon.weaponName}");
+        Console.WriteLine($"\nPlayer '{player.name}' Health: {player.health}");
+        Console.WriteLine($"Player '{player.name}' Weapon: {player.weapon.weaponName}");
 
         if(enemy.GetAlive() == true)
         {
@@ -31,8 +31,8 @@
         {
             Console.WriteLine($"\n\nEnemy '{enemy.name}' status: 'Dead'");
         }
-        Console.WriteLine($"\nPlayer '{enemy.name}' Health: {health}");
-        Console.WriteLine($"Player '{enemy.name}' Weapon: {weapon.weaponName}");
+        Console.WriteLine($"\nPlayer '{enemy.name}' Health: {enemy.health}");
+        Console.WriteLine($"Player '{enemy.name}' Weapon: {enemy.weapon.weaponName}");
     }
 
     

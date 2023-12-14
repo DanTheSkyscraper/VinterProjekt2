@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\daniel.taherkhanian\\Documents\\VinterProjekt2\\Vinterprojekt2\\Vinterprojekt2.csproj": {}
+    "c:\\Users\\daniel.taherkhanian\\Documents\\VinterProjekt2\\Vinterprojekt2\\Vinterprojekt2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\daniel.taherkhanian\\Documents\\VinterProjekt2\\Vinterprojekt2\\Vinterprojekt2.csproj": {
+    "c:\\Users\\daniel.taherkhanian\\Documents\\VinterProjekt2\\Vinterprojekt2\\Vinterprojekt2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\daniel.taherkhanian\\Documents\\VinterProjekt2\\Vinterprojekt2\\Vinterprojekt2.csproj",
+        "projectUniqueName": "c:\\Users\\daniel.taherkhanian\\Documents\\VinterProjekt2\\Vinterprojekt2\\Vinterprojekt2.csproj",
         "projectName": "Vinterprojekt2",
-        "projectPath": "C:\\Users\\daniel.taherkhanian\\Documents\\VinterProjekt2\\Vinterprojekt2\\Vinterprojekt2.csproj",
+        "projectPath": "c:\\Users\\daniel.taherkhanian\\Documents\\VinterProjekt2\\Vinterprojekt2\\Vinterprojekt2.csproj",
         "packagesPath": "C:\\Users\\daniel.taherkhanian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\daniel.taherkhanian\\Documents\\VinterProjekt2\\Vinterprojekt2\\obj\\",
+        "outputPath": "c:\\Users\\daniel.taherkhanian\\Documents\\VinterProjekt2\\Vinterprojekt2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
