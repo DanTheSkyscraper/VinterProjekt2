@@ -1,6 +1,5 @@
 ﻿public class PlayerEntity : Entity
 {
-    private Random Generator = new Random(); //Ta bort om behövs. Gäller alla andra generators också.
 
     private bool isAlive = true;
 
@@ -8,7 +7,7 @@
 
     public override void SetName()
     {
-        Console.WriteLine("\n\nWrite the name of your character:");
+        Console.WriteLine("\n\nWrite the name of your character:"); //This code allows the player to write their name.
         name = Console.ReadLine();
     }
 

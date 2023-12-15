@@ -13,10 +13,8 @@
                 //This Console.WriteLine informs the player that they can only write 'easy', 'medium' and 'hard', and that their answer should be in lowercase.
                 Console.WriteLine("\n\nPlease write only 'easy', 'medium' or 'hard'. Your choice should only be written in lowercase"); 
             }
-        }
+        } //The while-loop will restart if the player does not write the following: 'easy', 'medium' or 'hard'.
 
-        
-
-        return new Difficulty(); //This will restart the while-loop if the player does not write the following: 'easy', 'medium' or 'hard'.
+        return new Difficulty(); 
     }
 }

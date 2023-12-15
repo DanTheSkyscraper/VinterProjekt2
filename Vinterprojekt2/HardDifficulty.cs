@@ -2,6 +2,8 @@
 {
     private Random Generator = new Random();
 
+    //-------------------------------------
+
     public HardDifficulty()
     {
         difficultyName = "Hard";

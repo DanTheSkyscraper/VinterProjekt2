@@ -1,4 +1,4 @@
-﻿public class GameManager // Is this correct? See line 23, 24 and 34, 35.
+﻿public class GameManager 
 {
     private PlayerEntity player = new();
     private EnemyEntity enemy = new();

@@ -1,8 +1,8 @@
 ﻿public class EnemyEntity : Entity //EnemyEntity är en sorts entity
 {
-    private Random Generator = new Random();
+    private Random Generator = new Random(); //This Random Generator makes it so that the parts of the code below that use it are randomized. For this part, Random Generator randomizes which weapon the enemy has.
 
-    private bool isAlive = true;
+    private bool isAlive = true; //This code is later used to determine whether or not the EnemyEntity is alive or not.
 
     //-------------------------------------------
 

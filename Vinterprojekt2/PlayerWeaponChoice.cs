@@ -13,8 +13,10 @@
                 //This Console.WriteLine informs the player that they can only write 'sword', 'axe', 'spear' and 'mace', and that their answer should be in lowercase.
                 Console.WriteLine("\n\nPlease write only 'sword', 'axe', 'spear' or 'mace'. Your choice should only be written in lowercase");
             }
-        }
+        } //The while-loop will restart if the player does not write the following: 'sword', 'axe', 'spear' or 'mace'.
 
+        //The code below makes it so that depending on what the player writes, they are given a specific weapon.
+        //For example, if the player writes 'Sword', they are given the Sword.
         if(weaponChoice == "sword")
         {
             Console.WriteLine("\n\nYou chose the Sword");
@@ -35,8 +37,7 @@
             Console.WriteLine("\n\nYou chose the Mace");
             return new Mace();
         }
-        return new Weapon();
-        // return weaponChoice; //This will restart the while-loop if the player does not write the following: 'sword', 'axe', 'spear' or 'mace'.
+        return new Weapon(); //???
     }
 
     
