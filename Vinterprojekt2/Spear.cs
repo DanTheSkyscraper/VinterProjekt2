@@ -7,12 +7,12 @@
     public Spear()
     {
         weaponName = "Sword";
-        weaponDamage = Generator.Next(2, 12);
+        weaponDamage = Generator.Next(2, 13);
     }
 
     public override int WeaponCriticalAttack()
     {
         Console.WriteLine("\n\nThe player chooses to do a charge attack!");
-        return Generator.Next(2, 4) + Random.Shared.Next(weaponDamage);
+        return Generator.Next(2, 5) + Random.Shared.Next(weaponDamage);
     }
 }

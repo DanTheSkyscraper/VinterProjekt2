@@ -2,6 +2,7 @@
 {
     public static Difficulty DifficultyChoice()
     {
+
         string difficultyChoice = "";
         
         while(difficultyChoice != "easy" && difficultyChoice != "medium" && difficultyChoice != "hard")
@@ -15,6 +16,17 @@
             }
         } //The while-loop will restart if the player does not write the following: 'easy', 'medium' or 'hard'.
 
-        return new Difficulty(); 
+        if(difficultyChoice == "easy")
+        {
+            return new EasyDifficulty();
+        }
+        else if(difficultyChoice == "medium")
+        {
+            return new MediumDifficulty();
+        }
+        else
+        {
+            return new HardDifficulty();
+        }
     }
 }

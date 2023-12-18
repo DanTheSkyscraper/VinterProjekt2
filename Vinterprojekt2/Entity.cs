@@ -12,7 +12,7 @@
     
     //-------------------------------------
 
-    public Entity() //This is a constructor.
+    public Entity() //This is a constructor. This one creates a new instance of 'Weapon' and creates a new variable called 'weapon'.
     {
         Weapon weapon = new();
     }
@@ -26,7 +26,7 @@
     }
 
     //This code is used for the fight between the player and the enemy.
-    public void Attack(Entity target, Difficulty difficulty)
+    public void Attack(Entity target, Difficulty difficulty) //Parameter
     {
         Console.WriteLine($"\n\n{name} attacks with {weapon.weaponName}");
         int weaponDamage = weapon.Attack();
@@ -40,7 +40,7 @@
     }
 
     //This code is used for the fight between the player and the enemy. This specific code is used when the player chooses to use the charge attack (WeaponCriticalAttack).
-    public void WeaponCriticalAttack(Entity enemy)
+    public void WeaponCriticalAttack(Entity enemy) //Parameter
     {
         Console.WriteLine($"\n\n{name} attacks with {weapon.weaponName}");
         int weaponDamage = weapon.WeaponCriticalAttack();
@@ -50,4 +50,3 @@
     }
 }
 
-//This code is missing enemy attack ^. How do I fix this?

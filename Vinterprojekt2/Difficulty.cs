@@ -6,12 +6,12 @@
 
     //----------------------
 
-    public virtual int ModifyEnemyHealth(int oldHealthValue) //Kan jag ändra till vanling hälsa 'public int health' i Entity?
+    public virtual int ModifyEnemyHealth(int oldHealthValue)
     {
         return oldHealthValue = 100;
     }
 
-    public virtual int DamageModifier(int oldEnemyDamageAmount) //Kan jag ändra till vanling damage?
+    public virtual int DamageModifier(int oldEnemyDamageAmount)
     {
         return oldEnemyDamageAmount = Generator.Next(4, 8);
     }

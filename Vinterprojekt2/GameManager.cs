@@ -1,13 +1,13 @@
 ﻿public class GameManager 
 {
-    private PlayerEntity player = new();
-    private EnemyEntity enemy = new();
+    public PlayerEntity player;
+    public EnemyEntity enemy;
 
     //-------------------------------------
 
     public GameManager()
     {
-        player.SetName();
+        
     }
 
     public void PrintStats()

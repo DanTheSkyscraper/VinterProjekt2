@@ -11,10 +11,15 @@ while (restartGame == "y") //This is a while loop. This one will make it so that
     EnemyEntity enemy = new(); //This instance of the class 'EnemyEntity' is assigned the 'enemy' variable.
     GameManager gm = new(); //This instance of the class 'GameManager' is assigned the 'gm' variable.
 
+    gm.player = player; //This ensures that 'player' in Program.cs and 'player' in GameManager.cs are the same variable.
+    gm.enemy = enemy; //This ensures that 'enemy' in Program.cs and 'enemy' in GameManager.cs are the same variable.
+
     player.SetName(); //This is a method call for the 'SetName()' method on 'player'. See 'PlayerEntity.cs'.
 
     Console.WriteLine("A good name! Now, this is who you will be facing.");
     enemy.SetName(); //This is a method call for the 'SetName()' method on 'enemy'. See 'EnemyEntity.cs' and line 7 in 'Entity.cs'.
+
+    Console.WriteLine(enemy.name);
 
     Console.WriteLine("\n\nAs per tradition, you will both select your weapons.");
     Console.WriteLine("\n\nYou have four choices. Sword [a] / Axe [b] / Spear [c] / Mace [d]. Please answer in lowercase."); //Here, the player is asked to choose one of four choices and to only answer in lower case.
@@ -71,9 +76,9 @@ while (restartGame == "y") //This is a while loop. This one will make it so that
     {
         Console.WriteLine($"\n\nYour opponent {enemy.name} has been defeated. You win the 32nd Tournament of the international fighting championships!");
     }
-    else if (player.GetAlive() == false && enemy.GetAlive() == false) //This if statement makes it spo that if the player reaches 0 health, the enemy wins.
+    else if (player.GetAlive() == false && enemy.GetAlive() == true) //This if statement makes it spo that if the player reaches 0 health, the enemy wins.
     {
-        Console.WriteLine($"\n\n{player.name} has been defeated. You win the 32nd Tournament of the international fighting championships!");
+        Console.WriteLine($"\n\n{player.name} has been defeated. {enemy.name} wins the 32nd Tournament of the international fighting championships!");
     }
     else //This code makes it so that if both the player and the enemy reach 0 health, it is a draw.
     {
