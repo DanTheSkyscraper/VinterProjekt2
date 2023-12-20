@@ -1,4 +1,4 @@
-﻿public class PlayerDifficultyChoices //This is a public class, and it allows access through the objects that are created of this class.
+﻿public class PlayerDifficultyChoice //This is a public class, and it allows access through the objects that are created of this class.
 {
     public static Difficulty DifficultyChoice()
     {

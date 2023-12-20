@@ -6,7 +6,7 @@
 
     //-------------------------------------------
 
-    public void RandomEnemyWeapon() //This code randomizes what weapon the enemy will use, by randomly selecting a number between 1-4.
+    public void RandomizeEnemyWeapon() //This code randomizes what weapon the enemy will use, by randomly selecting a number between 1-4.
     {
         int eWeapon = Random.Shared.Next(5);
 

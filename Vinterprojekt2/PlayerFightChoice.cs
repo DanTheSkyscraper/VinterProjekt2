@@ -2,16 +2,16 @@
 {
     public static string FightChoice()
     {
-        string FightAlt = "";
-        while(FightAlt != "a" && FightAlt != "b")
+        string fightAlternative = "";
+        while(fightAlternative != "a" && fightAlternative != "b")
         {
-            FightAlt = Console.ReadLine();
-            if(FightAlt != "a" && FightAlt != "b")
+            fightAlternative = Console.ReadLine();
+            if(fightAlternative != "a" && fightAlternative != "b")
             {
                 //This Console.WriteLine informs the player that they can only type 'a' or 'b'.
                 Console.WriteLine("\n\nPlease type only 'a' or 'b'."); 
             }
         }
-        return FightAlt;
+        return fightAlternative;
     }
 }

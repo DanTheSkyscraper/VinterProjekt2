@@ -11,14 +11,14 @@
 
     //This code, the method 'ModifyEnemyHealth', has the integer paramater 'oldHealthValue', and the value 100 is assigned to it. 10 is added to it. This is then returned.
     //This polymorfism makes it so that 'ModifyEnemyHealth(int oldHealthValue)' is overriden in the 'Difficulty.cs' class.
-    public override int ModifyEnemyHealth(int oldHealthValue)
+    public override int ModifyEnemyHealth(int oldHealthValue) //Parameter. See line 29 in Entity.cs for explanation about parameters.
     {
         return oldHealthValue = 100 + 10;
     }
 
-    //This code, the method 'DamageModifier', has the integer paramater 'oldEnemyDamageAmount', and a Generator randomizing a value between 4-8 is assigned to it. 2 is added to it. This is then returned.
-    //This polymorfism makes it so that 'DamageModifier(int oldEnemyDamageAmount)' is overriden in the 'Difficulty.cs' class.
-    public override int DamageModifier(int oldEnemyDamageAmount)
+    //This code, the method 'ModifyDamage', has the integer paramater 'oldEnemyDamageAmount', and a Generator randomizing a value between 4-8 is assigned to it. 2 is added to it. This is then returned.
+    //This polymorfism makes it so that 'ModifyDamage(int oldEnemyDamageAmount)' is overriden in the 'Difficulty.cs' class.
+    public override int ModifyDamage(int oldEnemyDamageAmount) //Parameter. See line 29 in Entity.cs for explanation about parameters.
     {
         return oldEnemyDamageAmount = Generator.Next(4, 9) + 2;
     }

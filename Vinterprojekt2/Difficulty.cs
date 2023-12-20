@@ -9,14 +9,14 @@
 
     //This code, the method 'ModifyEnemyHealth', has the integer paramater 'oldHealthValue', and the value 100 is assigned to it. This is then returned.
     //This is a virtual integer, which means that this can later be overriden in other classes.
-    public virtual int ModifyEnemyHealth(int oldHealthValue) //int Parameter
+    public virtual int ModifyEnemyHealth(int oldHealthValue) //Parameter. See line 29 in Entity.cs for explanation about parameters.
     {
         return oldHealthValue = 100;
     }
 
-    //This code, the method 'DamageModifier', has the integer paramater 'oldEnemyDamageAmount', and a Generator randomizing a value between 4-8 is assigned to it. This is then returned.
+    //This code, the method 'ModifyDamage', has the integer paramater 'oldEnemyDamageAmount', and a Generator randomizing a value between 4-8 is assigned to it. This is then returned.
     //This is a virtual integer, which means that this can later be overriden in other classes.
-    public virtual int DamageModifier(int oldEnemyDamageAmount) //int Parameter
+    public virtual int ModifyDamage(int oldEnemyDamageAmount) //Parameter. See line 29 in Entity.cs for explanation about parameters.
     {
         return oldEnemyDamageAmount = Generator.Next(4, 9);
     }

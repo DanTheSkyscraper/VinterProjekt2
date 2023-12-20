@@ -26,13 +26,13 @@
     }
 
     //This code is used for the fight between the player and the enemy.
-    public void Attack(Entity target, Difficulty difficulty) //Parameter
+    public void Attack(Entity target, Difficulty difficulty) //A Parameter is a variable within, in this case, a method which makes it so that values can be passed onto said method. Here, it is 'target' and 'difficulty'.
     {
         Console.WriteLine($"\n\n{name} attacks with {weapon.weaponName}");
         int weaponDamage = weapon.Attack();
         if(this is EnemyEntity) //This code makes it so that if it is the enemy (EnemyEntity) that is attacking, then it runs the code in the if statement.
         {
-            weaponDamage = difficulty.DamageModifier(weaponDamage); //This code makes it so that the enemy deals different amounts of damage depending on what difficulty it is.
+            weaponDamage = difficulty.ModifyDamage(weaponDamage); //This code makes it so that the enemy deals different amounts of damage depending on what difficulty it is.
         }
         target.health -= weaponDamage; //This code subtracts the amount of damage either the player or the enemy receives with their health.
         target.health = Math.Max(0, target.health); //'Math.Max' is a Math class method used to return the larger of two specified numbers. In this code, that would be target.health, which means either the players or the enemies health.
@@ -40,7 +40,7 @@
     }
 
     //This code is used for the fight between the player and the enemy. This specific code is used when the player chooses to use the charge attack (WeaponCriticalAttack).
-    public void WeaponCriticalAttack(Entity enemy) //Parameter
+    public void WeaponCriticalAttack(Entity enemy) //A Parameter is a variable within, in this case, a method which makes it so that values can be passed onto said method. Here, it is 'enemy'.
     {
         Console.WriteLine($"\n\n{name} attacks with {weapon.weaponName}");
         int weaponDamage = weapon.WeaponCriticalAttack();

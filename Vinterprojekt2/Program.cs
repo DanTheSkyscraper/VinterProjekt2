@@ -27,14 +27,14 @@ while (restartGame == "y") //This is a while loop. This one will make it so that
     //This code makes it so that the player can choose a weapon, and it also ensures they can not type anything else but the 4 options shown above.
     //The code on line 25 makes it so that the enemy is given a randomly chosen weapon with the help of Random Generator and the code on line 9-29.
     player.weapon = PlayerWeaponChoice.WeaponChoice();
-    enemy.RandomEnemyWeapon();
+    enemy.RandomizeEnemyWeapon();
 
     //In this Console.WriteLine, the player is asked what difficulty they want to play on.
     Console.WriteLine("\n\nIt seems you are both done. Which difficulty are you on?");
 
     //This code makes it so that the variable 'diff' is created, and is assigned whatever the result is in the static method 'DifficultyChoice' from 'PlayerDifficultyChoices.cs'.
     //In other words, if the player types easy, the game will be on easy difficulty (EasyDifficulty.cs).
-    Difficulty diff = PlayerDifficultyChoices.DifficultyChoice();
+    Difficulty diff = PlayerDifficultyChoice.DifficultyChoice();
 
     //This code ensures that depending on which difficulty the player chooses, the enemy health will be changed to the health they have on that difficulty.
     enemy.health = diff.ModifyEnemyHealth(enemy.health); 
