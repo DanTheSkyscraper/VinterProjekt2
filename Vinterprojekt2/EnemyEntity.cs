@@ -30,11 +30,12 @@
 
     public override void SetName()
     {
-        //In This code, the name of the enemy is randomized by making use of the protected List in 'Entity.cs'.
+        //In this code, the name of the enemy is randomized by making use of the protected List in 'Entity.cs'.
         int i = Random.Shared.Next(names.Count);
         name = names[i];
     }
 
+    //This public bool returns the value of the 'isAlive' variable for the enemy.
     public bool GetAlive()
     {
         return isAlive;

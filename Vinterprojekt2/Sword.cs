@@ -15,6 +15,6 @@
     public override int WeaponCriticalAttack()
     {
         Console.WriteLine("\n\nThe player chooses to do a charge attack!");
-        return Generator.Next(1, 4) + Random.Shared.Next(weaponDamage);
+        return Generator.Next(1, 5) + Random.Shared.Next(weaponDamage);
     }
 }

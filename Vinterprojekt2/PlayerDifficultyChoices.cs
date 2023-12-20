@@ -16,6 +16,8 @@
             }
         } //The while-loop will restart if the player does not write the following: 'easy', 'medium' or 'hard'.
 
+        //The code below makes it so that depending on what the player writes, they are choosing a specific difficulty.
+        //For example, if the player writes 'medium', they choose medium difficulty.
         if(difficultyChoice == "easy")
         {
             return new EasyDifficulty();
